@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+#carta-gerada{
+  display: inline-block;
+}
 
 .newspaper {
   font-family: Times New Roman, Times, serif;
@@ -19,7 +22,7 @@
 }
 
 .magazine2 {
-  background-image: 'images/pink-pattern.png';
+  background-image: url('images/pink-pattern.png');
   color: fuchsia;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 900;
@@ -41,18 +44,22 @@
 }
 
 .rotateleft {
+  display: inline-block;
   transform: rotate(-5deg);
 }
 
 .rotateright {
+  display: inline-block;
   transform: rotate(5deg);
 }
 
 .skewleft {
+  display: inline-block;
   transform: skewX(10deg);
 }
 
 .skewright {
+  display: inline-block;
   transform: skewX(-10deg);
 }
 

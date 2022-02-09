@@ -5,6 +5,7 @@ const estilo = ['newspaper', 'magazine1', 'magazine2'];
 const tamanho = ['medium', 'big', 'reallybig'];
 const rotacao = ['rotateleft', 'rotateright'];
 const inclinacao = ['skewleft', 'skewright'];
+const spanMudaCor = document.getElementsByTagName('span')
 
 const classAleatória = (classe) => {
   let aleatorio = Math.floor(Math.random() * classe.length);
@@ -12,27 +13,22 @@ const classAleatória = (classe) => {
   return aleatorio;
 };
 
-const aleEstilo = classAleatória(estilo);
-const aleTamanho = classAleatória(tamanho);
-const alerotacao = classAleatória(rotacao);
-const aleinclinacao = classAleatória(inclinacao);
-
 const criarCarta = () => {
-  const inputSeparada = inputCartaTexto.value.split(' ');
+  pCartaGerada.innerHTML = '';
 
-  if (!inputSeparada || inputSeparada === ' ') {
-    return alert('Por favor, digite o conteúdo da carta');
-  }
-
-  for (let palavra = 0; palavra < inputSeparada.length; palavra += 1) {
-    const span = document.createElement('span');
-    span.innerHTML = inputSeparada[palavra];
-    inputSeparada[palavra] = span;
-    span
-      .classList = [`${aleEstilo} ${aleTamanho} ${alerotacao} ${aleinclinacao}`];
-    pCartaGerada.appendChild(span);
+  if (!inputCartaTexto.value || inputCartaTexto.value === ' ') {
+    pCartaGerada.innerText = 'Por favor, digite o conteúdo da carta.';
+  } else {
+    const inputSeparada = inputCartaTexto.value.split(' ');
+    for (let palavra = 0; palavra < inputSeparada.length; palavra += 1) {
+      const span = document.createElement('span');
+      span.innerHTML = inputSeparada[palavra];
+      inputSeparada[palavra] = span;
+      span.classList = [`${classAleatória(estilo)} ${classAleatória(tamanho)} ${classAleatória(rotacao)} ${classAleatória(inclinacao)}`];
+      pCartaGerada.appendChild(span);
+    }
   }
 };
-btnCriarCarta.addEventListener('click', criarCarta);
 
+btnCriarCarta.addEventListener('click', criarCarta);
 // console.log(classAleatória(estilo))
