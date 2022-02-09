@@ -5,6 +5,7 @@ const est = ['newspaper', 'magazine1', 'magazine2'];
 const tam = ['medium', 'big', 'reallybig'];
 const rot = ['rotateleft', 'rotateright'];
 const incli = ['skewleft', 'skewright'];
+const contador = document.getElementById('carta-contador');
 
 const claAle = (classe) => {
   let aleatorio = Math.floor(Math.random() * classe.length);
@@ -23,6 +24,10 @@ const mudaEstilo = (event) => {
   palavraSelecionada.className = mudaClasse;
 };
 
+const contadorDePalavras = (input) => {
+  contador.innerHTML = input;
+};
+
 const criarCarta = () => {
   pCartaGerada.innerHTML = '';
 
@@ -30,6 +35,7 @@ const criarCarta = () => {
     pCartaGerada.innerText = 'Por favor, digite o conteúdo da carta.';
   } else {
     const inputSeparada = inputCartaTexto.value.split(' ');
+    contadorDePalavras(inputSeparada.length);
     for (let palavra = 0; palavra < inputSeparada.length; palavra += 1) {
       const span = document.createElement('span');
       span.innerHTML = inputSeparada[palavra];
