@@ -3,7 +3,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-#carta-gerada{
+
+#carta-gerada {
   display: inline-block;
 }
 
@@ -62,4 +63,3 @@
   display: inline-block;
   transform: skewX(-10deg);
 }
-
