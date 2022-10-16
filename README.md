@@ -1,16 +1,25 @@
-# 🚧 README em construção 🚧
+<h1 align="center">Bem Vindo ao Mistery Letter 👋</h1>
 
-<!-- Olá, Tryber!
+<img src="/images/misteryCarta.gif" alt="Gif usando o Mistery Letter"/>
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+>  Esta aplicação permite ao usuário criar cartas divertidas e misteriosas. Usa a função random no JavaScript para gerar stilos diferentes para cada palavra.
+Projeto criado para consolidar conhecimentos adquiridos durante o módulo de **Fundamentos em desenvolvimento web na Trybe**.
 
-É essencial que você preencha esse documento por conta própria, ok?
+## Ferramentas utilizadas
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
+- HTML,
+- CSS,
+- JavaScript
 
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
+## Como usar
 
--->
+Basta acessar clicando na _Homepage_
+
+### 🏠 [Homepage]( https://wannymartins.github.io/Project---Mistery-Letter/)
+
+## Autor
+
+👤 **Wanny Martins**
+
+- Github: [@WannyMartins](https://github.com/WannyMartins)
+- LinkedIn: [@wannymartins](https://linkedin.com/in//wannymartins\/)
